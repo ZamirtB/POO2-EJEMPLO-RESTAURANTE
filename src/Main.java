@@ -34,8 +34,8 @@ public class Main {
         pedidos.put(3, combos.get(2));
 
         System.out.println("Ha pedido:" + pedidos.get(2).getPlato().getSabor() + " bebida: "+ pedidos.get(2).getBebidas().getSabor());
-        System.out.println("Precio: " + pedidos.get(2).getPlato().getPrecio());
-        System.out.println("Total:" );
+        System.out.println("Precio: " + pedidos.get(2).getPrecio());
+        System.out.println("Total: "  + pedidos.get(2).getPromocion());
 
     }
 

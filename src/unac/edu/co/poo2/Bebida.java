@@ -1,9 +1,9 @@
 package unac.edu.co.poo2;
 
 public class Bebida  {
-    private String tamaño;
-    private String sabor;
-    private Double precio;
+    protected String tamaño;
+    protected String sabor;
+    protected Double precio;
 
     public Bebida(){
 

@@ -19,8 +19,10 @@ public class Combo {
         return plato;
     }
 
-    public void setPlato(Plato plato) {
+    public Combo(Plato plato, Bebida bebidas, Double precio) {
         this.plato = plato;
+        this.bebidas = bebidas;
+        this.precio = precio;
     }
 
     public Bebida getBebidas() {
@@ -36,11 +38,15 @@ public class Combo {
         double bebida;
         double total;
         plato= this.plato.getPrecio();
-        bebida=this.bebidas.getPrecio();
-        total= (plato+bebida);
+        bebida= bebidas.getPrecio();
+        total=(plato+bebida);
         return  total;
     }
-
+    public Double getPromocion(){
+        double promocion;
+        promocion= this.getPrecio()-(this.getPrecio()*0.15);
+        return promocion;
+    }
     public void setPrecio(Double precio) {
         this.precio = precio;
     }
